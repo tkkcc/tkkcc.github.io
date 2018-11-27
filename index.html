@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>bilabila</title>
+    <style>
+      body {
+        padding: 1em 0;
+        font-family: monospace;
+        font-size: 3em;
+        text-align: center;
+      }
+      body > div {
+        text-align: left;
+        display: inline-block;
+      }
+      a {
+        display: block;
+        user-select: none;
+        text-decoration: none;
+        color: #444;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <script>
+      const a = {
+        'libinput multiplier': 'https://aur.archlinux.org/packages/libinput-multiplier/',
+        'javlibrary preview': 'https://sleazyfork.org/en/scripts/37122-javlibrary-preview',
+        '$5 vps': '/v',
+        'hostloc credit': 'https://www.npmjs.com/package/hostloc-credit',
+        'openload video info': 'https://greasyfork.org/en/scripts/40855-openload-video-info',
+        'bilabila 三连': 'https://greasyfork.org/en/scripts/372890-bilibili%E4%B8%89%E8%BF%9E',
+        'github copy': 'https://greasyfork.org/en/scripts/374461-github-copy',
+        // greasyfork: 'https://greasyfork.org/en/users/164996-tkkcc',
+        // 'sleazyfork':'https://sleazyfork.org/en/users/164996-tkkcc',
+        'xiaomi notebook': 'https://github.com/tkkcc/minotebook',
+        'osu! beatmap pack': '/o',
+        'jpg improved': '/jpp',
+        'old blog': '/old',
+      }
+      const b = Object.entries(a)
+        .map(i => `<a href='${i[1]}' target='_blank'>${i[0]}</a>`)
+        .join('')
+      document.body.firstElementChild.insertAdjacentHTML('afterbegin', b)
+    </script>
+  </body>
+</html>
