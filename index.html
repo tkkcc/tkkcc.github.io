@@ -5,13 +5,10 @@
     <style>
       body {
         padding: 1em 0;
-        font-family: monospace;
         font-size: 3em;
-        text-align: center;
-      }
-      body > div {
-        text-align: left;
-        display: inline-block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
       a {
         display: block;
@@ -26,19 +23,18 @@
     <script>
       const a = {
         'libinput multiplier': 'https://aur.archlinux.org/packages/libinput-multiplier',
-        'javlibrary preview': 'https://sleazyfork.org/en/scripts/37122-javlibrary-preview',
+        'javlibrary preview': 'https://sleazyfork.org/scripts/37122-javlibrary-preview',
+        'sehuatang 404': 'https://sleazyfork.org/scripts/377746-sehuatang',
         '$5 vps': '/v',
         'hostloc credit': 'https://www.npmjs.com/package/hostloc-credit',
-        'openload video info': 'https://greasyfork.org/en/scripts/40855-openload-video-info',
-        'bilibili 三连': 'https://greasyfork.org/en/scripts/372890-bilibili%E4%B8%89%E8%BF%9E',
-        'github copy': 'https://greasyfork.org/en/scripts/374461-github-copy',
-        // greasyfork: 'https://greasyfork.org/en/users/164996-tkkcc',
-        // 'sleazyfork':'https://sleazyfork.org/en/users/164996-tkkcc',
+        'openload video info': 'https://greasyfork.org/scripts/40855-openload-video-info',
+        'bilibili 三连': 'https://greasyfork.org/scripts/372890-bilibili%E4%B8%89%E8%BF%9E',
+        'github copy': 'https://greasyfork.org/scripts/374461-github-copy',
         'xiaomi notebook': 'https://github.com/tkkcc/minotebook',
+        mentohust: 'https://github.com/tkkcc/mentohust',
+        'olg blog': '/blog',
         'osu! beatmap pack': '/o',
-        'jpg improved': '/jpp',
-        'old blog': '/old',
-        'mentohust': 'https://github.com/tkkcc/mentohust'
+        'jpg improved': '/jpp'
       }
       const b = Object.entries(a)
         .map(i => `<a href='${i[1]}' target='_blank'>${i[0]}</a>`)
