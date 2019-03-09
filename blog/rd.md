@@ -10,7 +10,7 @@ vscode, python远程调试, 笔记本<->集群master<->集群节点node
 3. 单边反复调试
 
 ### 代码同步
-用sshfs挂载集群目录,改完直接F5触发自动保存然后调试.或者写个rsync同步任务,作为调试的preLaunchTask.我选择前者
+用sshfs挂载集群目录,改完直接F5触发自动保存然后调试.或者写个rsync同步任务,作为调试的preLaunchTask.选择前者
 ```sh
 mou h:code/code/ $H/code sshfs
 ```
@@ -54,7 +54,7 @@ IdentityFile ~/.ssh/no
 > 例如要在node4上用1个gpu,2个cpu,就用`qsi 4 1 2`,它会先用ssh打通集群与节点的连接,再提交任务进入节点,等任务结束出来kill掉ssh
 
 
-vscode中debug配置为python attach
+vscode调试配置为python attach
 ```json
 {
   "name": "40056",
