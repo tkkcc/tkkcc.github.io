@@ -1,3 +1,11 @@
+## [2020](2020)
+
+年度总结
+
+## [good](xorboot)
+
+全能boot loader
+
 ## [xorboot](xorboot)
 
 全能boot loader
@@ -14,17 +22,17 @@ vscode python远程调试
 
 无小鸡内网穿透
 
-## [ext4+ntfs+efi 三分区方案](partition)
+## [ext4+ntfs+efi三分区方案](partition)
 
-vhd 原生虚拟双启
+vhd原生虚拟双启
 
 ## [iodine](iodine)
 
-dns 隧道过认证
+dns隧道过认证
 
 ## [cac](cac)
 
-vps 快速配置 [5 刀年付](//tkkcc.github.io/v) [一键](//github.com/tkkcc/vps#readme)
+vps快速配置 [5刀年付](//tkkcc.github.io/v) [一键](//github.com/tkkcc/vps#readme)
 
 ## [arch](arch)
 
@@ -40,4 +48,5 @@ vps 快速配置 [5 刀年付](//tkkcc.github.io/v) [一键](//github.com/tkkcc/
 
 ## [v2ray](v2ray)
 
-v2ray 服务端+客户端配置
+v2ray服务端+客户端配置
+

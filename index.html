@@ -11,10 +11,15 @@
         align-items: center;
       }
       a {
+        padding-left: 1em;
         display: block;
         user-select: none;
         text-decoration: none;
         color: #444;
+      }
+      .title {
+        margin-top: 1em;
+        user-select: none;
       }
     </style>
   </head>
@@ -22,23 +27,46 @@
     <div></div>
     <script>
       const a = {
-        'libinput multiplier': 'https://aur.archlinux.org/packages/libinput-multiplier',
-        'javlibrary preview': 'https://sleazyfork.org/scripts/37122-javlibrary-preview',
-        'sehuatang 404': 'https://sleazyfork.org/scripts/377746-sehuatang',
-        '$5 vps': '/v',
-        'hostloc credit': 'https://www.npmjs.com/package/hostloc-credit',
-        'openload video info': 'https://greasyfork.org/scripts/40855-openload-video-info',
-        'bilibili 三连': 'https://greasyfork.org/scripts/372890-bilibili%E4%B8%89%E8%BF%9E',
-        'github copy': 'https://greasyfork.org/scripts/374461-github-copy',
-        'xiaomi notebook': 'https://github.com/tkkcc/minotebook',
-        mentohust: 'https://github.com/tkkcc/mentohust',
-        'olg blog': '/blog',
-        'osu! beatmap pack': '/o',
-        'jpg improved': '/jpp'
+        linux: {
+          'libinput multiplier': 'https://github.com/tkkcc/libinput_patch',
+          dot: 'https://github.com/tkkcc/dot'
+        },
+        tampermonkey: {
+          'bilibili 三连':
+            'https://greasyfork.org/scripts/372890-bilibili%E4%B8%89%E8%BF%9E',
+          'javlibrary preview':
+            'https://sleazyfork.org/scripts/37122-javlibrary-preview',
+          'sehuatang 404': 'https://sleazyfork.org/scripts/377746-sehuatang',
+          'github copy': 'https://greasyfork.org/scripts/374461-github-copy'
+        },
+        game: {
+          arknights: 'https://github.com/tkkcc/arknights',
+          xxtjd: 'https://www.npmjs.com/package/xxtjd-auto'
+        },
+        tutorial: {
+          'xiaomi notebook': 'https://github.com/tkkcc/minotebook',
+          mentohust: 'https://github.com/tkkcc/mentohust'
+        },
+        node: {
+          'hostloc credit': 'https://www.npmjs.com/package/hostloc-credit',
+          'sehuatang credit': 'https://www.npmjs.com/package/sehuatang-credit'
+        },
+        page: {
+          blog: '/blog',
+          'low end vps': '/v',
+          'osu! beatmap pack': '/o',
+          'jpg improved': '/jpp'
+        }
       }
       const b = Object.entries(a)
-        .map(i => `<a href='${i[1]}' target='_blank'>${i[0]}</a>`)
+        .map(
+          i =>
+            `<span class=title>${i[0]}</span>${Object.entries(i[1])
+              .map(j => `<a href='${j[1]}' target='_blank'>${j[0]}</a>`)
+              .join('')}`
+        )
         .join('')
+
       document.body.firstElementChild.insertAdjacentHTML('afterbegin', b)
     </script>
   </body>
