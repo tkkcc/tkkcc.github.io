@@ -2,10 +2,6 @@
 
 年度总结
 
-## [good](xorboot)
-
-全能boot loader
-
 ## [xorboot](xorboot)
 
 全能boot loader
